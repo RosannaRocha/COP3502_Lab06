@@ -1,3 +1,11 @@
+# COP3502 Spring 2023 
+# Lab 06
+# Suvam Kharel
+# Rosanna Rocha
+# GitHub Repository: https://github.com/RosannaRocha/COP3502_Lab06
+
+
+# Function to print menu option
 def menu_options():
     print("MENU")
     print("-------------")
@@ -6,6 +14,7 @@ def menu_options():
     print("3.Quit")
 
 
+# Function to encode password
 def encode_password(password):
 
     encoded_pw = ""
@@ -15,6 +24,7 @@ def encode_password(password):
     return encoded_pw
 
 
+# Function to decode password
 def decode_password(encoded_pw):
     decoded_pw = ""
     for digit in encoded_pw:
@@ -23,6 +33,7 @@ def decode_password(encoded_pw):
     return decoded_pw
 
 
+# Main function
 def main():
     encoded_pw = ""
     while True:
@@ -44,5 +55,6 @@ def main():
             print("Invalid option, please try again.")
 
 
+# Checking for main function
 if __name__ == "__main__":
     main()
